@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=SuMAnwendung
+comment1.params=
+comment1.target=SuMAnwendung()
+comment1.text=\n\ Konstruktor\n
+comment2.params=
+comment2.target=void\ hatKnopfRechneGeklickt()
+comment3.params=
+comment3.target=void\ hatKnopfBeendenGeklickt()
+comment4.params=pZahl
+comment4.target=java.math.BigInteger\ fakultaet_rekursiv(int)
+comment4.text=\n\ Rekursive\ Berechnung\ der\ Fakultaet\ einer\ Zahl\n\ @param\ pZahl\ die\ Zahl,\ deren\ Fakultaet\ berechnet\ werden\ soll\n\ @return\ die\ Fakultaet\ der\ uebergebenen\ Zahl\n
+numComments=5
