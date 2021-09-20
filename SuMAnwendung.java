@@ -2,7 +2,7 @@
  * Die Klasse SuMAnwendung wurde automatisch erstellt: 
  * 
  * @author Torben P
- * @version v9.6.1
+ * @version v9.13.0
  */
 
 import sum.komponenten.*;
@@ -53,7 +53,7 @@ public class SuMAnwendung extends EBAnwendung
 
     public void hatKnopfRechneGeklickt()
     {
-        hatZeichenbereichErgebnis.setzeInhalt(this.fakultaet_rekursiv(hatTextfeldN.inhaltAlsGanzeZahl()).toString());
+        hatZeichenbereichErgebnis.setzeInhalt(this.fakultaet_iterativ(hatTextfeldN.inhaltAlsGanzeZahl()).toString());
     }
 
     public void hatKnopfBeendenGeklickt()
@@ -72,6 +72,28 @@ public class SuMAnwendung extends EBAnwendung
             return new BigInteger("1");
         else
             return fakultaet_rekursiv(pZahl - 1).multiply(new BigInteger(""+pZahl));
+    }
+
+    public BigInteger fakultaet_iterativ(int pZahl)
+    {
+        
+        if(pZahl < 2)
+        {
+            //pZahl ist gleich 1
+            return new BigInteger("1");
+        }
+        else
+        {
+            BigInteger lProdukt = new BigInteger("1");
+            for (int i = 1; i <= pZahl; i++ )
+            {
+                //lProdukt = lProdukt * i;
+                
+                lProdukt = new BigInteger(""+ lProdukt).multiply(new BigInteger(""+i));
+            }
+            return lProdukt;
+        }
+
     }
 
 }
